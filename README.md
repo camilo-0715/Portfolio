@@ -17,5 +17,18 @@ another of my most important projects was the development of software for a chim
 
 more information about this project can be found on the following link: [NFC implant](https://github.com/camilo-0715/Mecatronica-2022-2023/wiki/Implante-NFC)
 
+### Automatic mecanism for wheelchair
+
+I am presently engaged in a compelling project that seeks to revolutionize mobility for individuals with physical limitations. This venture, a collaboration with a skilled colleague, involves customizing a wheelchair for a client who experiences reduced mobility. Our goal is to develop an automated mechanism for rotating the wheelchair seat, a feature aimed at enhancing user autonomy and comfort. This project is not just a testament to our technical expertise, but also reflects our dedication to improving lives through innovative solutions.
+
+As the project is in its developmental phase, it’s a journey of continual learning and adaptation. We are meticulously documenting our progress, from conceptual designs to the intricate details of mechanical engineering. This documentation will be regularly updated on this [dedicated GitHub repository](https://github.com/camilo-0715/Mecanismo-para-el-giro-automatico-de-un-scooter-para-personas-con-movilidad-reducida), allowing interested parties to track our progress and engage with the project. This repository will soon be made accessible, offering insights into our creative process and the challenges we navigate to bring this transformative idea to fruition.
+
+
+
+
+
+
+
+
 
 
