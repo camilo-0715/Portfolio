@@ -17,6 +17,14 @@ another of my most important projects was the development of software for a chim
 
 more information about this project can be found on the following link: [NFC implant](https://github.com/camilo-0715/Mecatronica-2022-2023/wiki/Implante-NFC)
 
+### Genetic algorithm trained Mario bros agent
+
+I have developed a genetic algorithm agent that is capable of solving levels in the popular game Mario Bros. This project represents a unique intersection of artificial intelligence and gaming, where the agent uses principles of genetic algorithms to navigate and complete various levels of the game. This approach not only demonstrates the agent's problem-solving capabilities but also showcases the potential of genetic algorithms in complex decision-making scenarios.
+
+The entire development process of this project, including the code, has been meticulously documented and is available for review. For those interested in the technical details, the strategies employed by the agent, and the evolutionary aspects of the algorithm, you can find all this information in the link provided below. This repository serves as a comprehensive resource, offering insights into the intricacies of applying genetic algorithms to video game environments, particularly in a game as dynamic and challenging as Mario Bros.
+
+[link to the project](https://github.com/camilo-0715/GA_trained_mario)
+
 ### Automatic mecanism for wheelchair
 
 I am presently engaged in a compelling project that seeks to revolutionize mobility for individuals with physical limitations. This venture, a collaboration with a skilled colleague, involves customizing a wheelchair for a client who experiences reduced mobility. Our goal is to develop an automated mechanism for rotating the wheelchair seat, a feature aimed at enhancing user autonomy and comfort. This project is not just a testament to our technical expertise, but also reflects our dedication to improving lives through innovative solutions.
