@@ -29,49 +29,58 @@
 			<div id="main">
 
 				<!-- One -->
-					<section id="one">
-						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
-						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
-						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
-						</ul>
-					</section>
+				<section id="one">
+					<header class="major">
+						<h2>About me</h2>
+					</header>
+					<div id="intro-paragraph">
+						<p>My name is Juan Camilo Carmona Sanchez, a passionate robotics engineer committed to exploring the intriguing concept of transhumanism. With a solid foundation from my time at King Juan Carlos University in Madrid, Spain, where I graduated with honors, I've embarked on a remarkable odyssey into the world of robotics and technology.</p>
+						<p>Since childhood, I aspired to be an engineer, but it was during my formative teenage years that I stumbled upon the captivating realm of robotics. As I delved into programming, I eagerly participated in various robotics events and competitions, discovering my deep fascination for both robotics and artificial intelligence.</p>
+					</div>
+					<div id="extra-paragraphs" style="display: none;">
+						<p>My life's journey has led me to diverse corners of the world, including Colombia, China, the Canary Islands, and Madrid. These experiences have not only enriched my knowledge but also fostered my adaptability in diverse environments, a skill I consider invaluable.</p>
+						<p>Beyond my engineering prowess, I am a passionate advocate for transhumanism, envisioning a world where humans and technology coexist symbiotically. My heart lies in the field of biorobotics, where I am particularly intrigued by implants, exoskeletons, and all forms of robotics technology that bridge the gap between humanity and technology.</p>
+						<p>I am committed to contributing to the creation of a world where humans and technology harmoniously merge, enhancing our capabilities and improving the human condition. Join me on this extraordinary journey where we explore the limitless potential of human-technology symbiosis.</p>
+					</div>
+					<ul class="actions">
+						<li><a href="#" class="button" onclick="toggleContent()">Learn More</a></li>
+					</ul>
+				</section>
 
+				<script>
+					function toggleContent() {
+						var introParagraph = document.getElementById("intro-paragraph");
+						var extraParagraphs = document.getElementById("extra-paragraphs");
+
+						if (extraParagraphs.style.display === "none") {
+							extraParagraphs.style.display = "block";
+						} else {
+							extraParagraphs.style.display = "none";
+						}
+					}
+				</script>
 				<!-- Two -->
 					<section id="two">
 						<h2>Recent Work</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
+								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/autonomous_driving.jpg" alt="" /></a>
+								<h3>Autonomous driving in CARLA based on reinforcement learning</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
+								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/NFC_implant.png" alt="" /></a>
+								<h3>NFC implant</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
+								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/Mario_bors_2.jpg" alt="" /></a>
+								<h3>Genetic algorithm trained Mario bros player agent</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
+								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/automatic_wheelchair.png" alt="" /></a>
+								<h3>Mechanism for the automatic spining of a scooter for people with reduced mobility</h3>
 								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
 							</article>
 						</div>
@@ -101,17 +110,17 @@
 								<ul class="labeled-icons">
 									<li>
 										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
-										1234 Somewhere Rd.<br />
-										Nashville, TN 00000<br />
-										United States
+										Plaza Manuel Becerra, 3 <br />
+										Madrid, cp 28028<br />
+										Spain
 									</li>
 									<li>
 										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
-										000-000-0000
+										+34 689377076
 									</li>
 									<li>
 										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-										<a href="#">hello@untitled.tld</a>
+										<a href="#">juancamilocarmonasanchez@gmail.com</a>
 									</li>
 								</ul>
 							</div>
@@ -448,7 +457,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="mailto:juancamilocarmonasanchez@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Juan Camilo Carmona Sanchez 2024. All rights reserved.</li>
 				</ul>
 			</div>
 		</footer>
