@@ -51,7 +51,7 @@
 						<div class="inner">
 							<h1>NFC implant</h1>
 							<span class="image main"><img src="images/pic13.jpg" alt="" /></span>
-							<p>Probably my favourite and mos exiting project is the installation of an NFC implant in my left hand. This endeavor represents a perfect blend of my passion for innovative technology and transhumanism. In my free time, I engage deeply in developing and refining a diverse range of software and functionalities for this implant. My efforts have transformed it into a highly versatiletool.</p>
+							<p>Probably my favourite and most exiting project is the installation of an NFC implant in my left hand. This endeavor represents a perfect blend of my passion for innovative technology and transhumanism. In my free time, I engage deeply in developing and refining a diverse range of software and functionalities for this implant. My efforts have transformed it into a highly versatiletool.</p>
 
 							<p>This tiny yet powerful device now enables me to perform a variety of impressive and innovative tasks with a simple scan. unlocking intelligent doors, controlling spotify music, controlling my house lights, and carrying my contact details are only some of the features that I have programmed so far</p>
 
@@ -65,16 +65,29 @@
 							<h1>Installation of the Implant</h1>
 							<p>There are various installation methods depending on the implant and its size. My particular implant is a small capsule-shaped device, which came inside a pre-sterilized syringe. Therefore, the installation simply involved inserting the needle under the skin and pressing the syringe to deposit the implant inside the body. Then, the needle is withdrawn, and the wound is left to heal so that the implant becomes trapped within the skin. In addition to the syringe, the implant package includes gloves, bandages, and all sorts of useful tools for implant installation, all pre-sterilized.</p>
 							
-							<p>Despite the installation process being minimally invasive and the wound caused by the needle being small, it still inflicts some damage to the body, which requires a recovery period. In my case, right after the installation, the area where the implant was placed swelled slightly, accompanied by mild pain, especially when making abrupt hand movements. Both the pain and swelling gradually subsided over the days, and about a week after the installation, the area was completely recovered. As for the opening left by the needle in the hand, it took a day to close. However, even now, about a month after the installation, I still have a mark on my hand from the needle wound, which will eventually turn into a small scar.</p>
+							<p>Despite the installation process being minimally invasive and the wound caused by the needle being small, it still inflicts some damage to the body, which requires a recovery period. In my case, right after the installation, the area where the implant was placed swelled slightly, accompanied by mild pain, especially when making abrupt hand movements. Both the pain and swelling gradually subsided over the days, and about a week after the installation, the area was completely recovered. As for the opening left by the needle in the hand, it took a day to close. However, even today I still have a mark on my hand from the needle wound.</p>
 						</div>
 					</div>
 
+					<div style="text-align: center;">
+						<figure style="display: inline-block; margin-bottom: 45px;">
+							<img src="thumbs/implant_on_skin.jpg" alt="Implant After Installation" style="width: 100%; max-width: 800px; display: block;">
+							<figcaption style="font-style: italic; font-size: 17px; margin-top: 5px;">Implant After Installation</figcaption>
+						</figure>
+					</div>
+					<br>
+					<div id="implant installation">
+						<div class="inner">
+							<p>As depicted in the image above, the implant is clearly visible beneath the skin, yet it neither causes discomfort nor pain. In fact, it is so inconspicuous that you can easily forget it's even there.</p>							
+						</div>
+					</div>
+					
 					<!-- Implant Features Section -->
 					<div id="implant-features">
 						<div class="inner">
 							<h1>Implant Features</h1>
 							<h2>Slides controller</h2>
-							<p>I came up with the idea of developing an application to control presentation slides with my mobile device, making the presentation more engaging and dynamic. This idea turned out to be a great success, and I will provide some documentation on how it works below.</p>
+							<p>Some time after intalling the implant I came up with the idea of developing an application to control presentation slides with my mobile device, making the presentation more engaging and dynamic. This idea turned out to be a great success, and I will provide some documentation on how it works below.</p>
 							
 							<p>First, let's explain how the program functions, as the chip has NFC connectivity but no WiFi or any other type. Therefore, we cannot communicate directly with our slide viewer from our chip. Instead, we'll introduce a program in our mobile device, which we'll configure in such a way that when our mobile reads the NFC chip, it executes a script via SSH on the computer where we have our presentation, to advance a slide.</p>
 
@@ -109,8 +122,29 @@ controller = Presentation.Controller
 controller.gotoNextSlide()
 							</pre></code>
 
+							<p>In the video below, you can see thi functionality of the NFC implant in action.</p>
+						</div>
+					</div>				
 
-							<p>In the video below, you can see the functionality of the NFC implant in action. For a more detailed and extended demonstration, complete with an explanation, be sure to check out the video on my social media. <a href="YOUR_SOCIAL_MEDIA_VIDEO_LINK" target="_blank">Click here</a> to view it.</p>
+					<div style="text-align: center;">
+						<div style="max-width: 800px; margin: 0 auto;">
+							<video width="auto" height="700" style="margin-bottom: 45px;" controls>
+								<source src="thumbs/slider_passer.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+
+					<div>
+						<div class="inner">
+							<p>For a more detailed and extended demonstration, be sure to check out the video on my social media. <a href="https://vm.tiktok.com/ZGeMaR6g7/" target="_blank" style="color: #3366FF; text-decoration: none; font-weight: bold;">Click here to view it.</a></p>
+						</div>
+					</div>
+
+					<div id="implant-features">
+						<div class="inner">
+
+
 
 							<h2>Spotify Music Controller</h2>
 							<p>This project extends the functionality of the implant to control music playback on Spotify. By scanning the implant in my hand, a script is triggered which connects to my PC via SSH. This script then interfaces with Spotify's API to control music playback, allowing for actions like stopping music that is currently playing.</p>
@@ -152,14 +186,37 @@ current_track = sp.current_playback()
 # Imprimir el título de la canción actual
 if current_track and current_track["item"]:
 	print(f"Reproduciendo ahora: {current_track['item']['name']}")
-							</pre></code>
+	
+					</pre></code>
 
-							<p>In the video below, you can see the functionality of the NFC implant in action. For a more detailed and extended demonstration, complete with an explanation, be sure to check out the video on my social media. <a href="YOUR_SOCIAL_MEDIA_VIDEO_LINK" target="_blank">Click here</a> to view it.</p>
 
+					<p>In the video below, you can see thi functionality of the NFC implant in action.</p>
+
+					</div>
+						</div>
+
+					<div style="text-align: center;">
+						<div style="max-width: 800px; margin: 0 auto;">
+							<video width="auto" height="700" style="margin-bottom: 45px;" controls>
+								<source src="thumbs/spotify_controller.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+
+					<div>
+						<div class="inner">
+							<p>For a more detailed and extended demonstration, be sure to check out the video on my social media. <a href="https://vm.tiktok.com/ZGeMa2Ju1/" target="_blank" style="color: #3366FF; text-decoration: none; font-weight: bold;">Click here to view it.</a></p>
+						</div>
+					</div>
+
+					<div>
+						<div class="inner">
 							<h2>Presentation card</h2>
 							<p>Another exciting functionality of the NFC implant is its ability to act as a digital presentation card. I have programmed the implant to store specific information that, when scanned, triggers a notification on the smartphone. This notification leads directly to this website or to a linktree containing all my pertinent information, such as contact details, professional portfolio, and social media links.</p>
 							<p>This feature is particularly useful in networking scenarios, making the exchange of contact information seamless and futuristic. Instead of traditional business cards, a simple scan of the implant can provide a much richer and more interactive experience.</p>							
-							<p>To see this functionality in action, you can watch the video demonstration below. This video provides a visual guide on how the digital presentation card works and showcases the ease and efficiency of information sharing using the NFC implant. <a href="YOUR_VIDEO_LINK" target="_blank">Click here</a> to view the video.</p>
+							<p>For a demonstration od how this functionality works, check out this video on my social media. <a href="https://vm.tiktok.com/ZGeMayj4J/" target="_blank" style="color: #3366FF; text-decoration: none; font-weight: bold;">Click here to view it.</a></p>
+
 
 							<h2>Digital key</h2>
 							<p>I am currently working on a groundbreaking feature that will transform my NFC implant into a digital key. This feature involves the integration of the implant with a smart lock system for my house. The plan is to install an intelligent lock that operates with an NFC key, and then clone the key's data onto the implant in my hand. This will allow me to unlock my house door simply by scanning my hand over the lock.</p>
