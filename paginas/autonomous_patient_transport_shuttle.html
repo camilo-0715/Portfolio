@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<!--
+    Phantom by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Autonomous patient transport shuttle</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+            <header id="header">
+                <div class="inner">
+                    <!-- Logo -->
+                    <a href="file:///home/camilo/Escritorio/Portfolio/index.html" class="logo">
+                        <span class="symbol"><img src="images/logo.png" alt="" /></span><span class="title">J.Camilo Carmona</span>
+                    </a>
+                    <!-- Nav -->
+                    <nav>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="file:///home/camilo/Escritorio/Portfolio/index.html">Home</a></li>
+                    <li><a href="CARLA.html">CARLA Project</a></li>
+                    <li><a href="kombatbots.html">KombatBots</a></li>
+                    <li><a href="mario.html">Mario Project</a></li>
+                    <li><a href="nfc_implant.html">NFC Implant</a></li>
+                    <li><a href="wheelchair.html">Wheelchair Project</a></li>
+                </ul>
+            </nav>
+
+            <!-- Main -->
+            <div id="main">
+                <div class="inner">
+                    <h1>Autonomous patient transport shuttle for hospitals </h1>
+                    <span class="image main"><img src="thumbs/shuttle_banner.jpg" alt="" width="400" /></span>
+                    <p>At Sphaira GmbH I worked as a robotics engineer on the development of an autonomous patient transport shuttle, designed to solve a deep and costly problem in hospitals: getting patients to the right place at the right time without delays. Every day, surgeries and medical appointments are postponed or rescheduled because porters are overloaded, transports are late, or coordination breaks down, which translates into huge time and money losses for hospitals and a very stressful experience for patients.</p>
+                    <p>Our goal with this project was to build, from scratch, a fully autonomous patient transport vehicle capable of safely moving patients through real hospital environments, side by side with staff, visitors, and other robots.This required combining reliable autonomy (localization, mapping, planning, obstacle avoidance) with strong safety, robust system architecture, and an intelligent understanding of crowded social environments like corridors, waiting areas, and operating room zones.</p>
+                </div>
+            </div>
+
+            <!-- GALERÍA DE FOTOS: Presentaciones y trabajo en cliente -->
+            <div style="text-align: center; padding: 2em 0;">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <!-- Fila 1: Las 2 fotos de directivos lado a lado -->
+                    <div style="display: flex; gap: 20px; margin-bottom: 30px; flex-wrap: wrap; justify-content: center;">
+                        <figure style="flex: 1; min-width: 300px; margin: 0;">
+                            <img src="thumbs/explicacion_a_directivos_del_hospital_1.jpeg" alt="Presenting to hospital directors 1" style="width: 100%; height: auto; display: block;">
+                            <figcaption style="font-style: italic; font-size: 15px; margin-top: 5px;">Presenting shuttle system to hospital directors</figcaption>
+                        </figure>
+                        <figure style="flex: 1; min-width: 300px; margin: 0;">
+                            <img src="thumbs/explicacion_a_directivos_del_hospital_2.jpeg" alt="Presenting to hospital directors 2" style="width: 100%; height: auto; display: block;">
+                            <figcaption style="font-style: italic; font-size: 15px; margin-top: 5px;">Explaining navigation & safety features</figcaption>
+                        </figure>
+                    </div>
+
+                    <!-- Fila 2: Turno con transportistas + mostrando Moby -->
+                    <div style="display: flex; gap: 20px; margin-bottom: 45px; flex-wrap: wrap; justify-content: center;">
+                        <figure style="flex: 1; min-width: 300px; margin: 0;">
+                            <img src="thumbs/turno_con_transportistas.jpeg" alt="On-site with hospital transport operators" style="width: 100%; height: auto; display: block;">
+                            <figcaption style="font-style: italic; font-size: 15px; margin-top: 5px;">On-site at client hospital: analyzing transport operations to adapt robot workflows</figcaption>
+                        </figure>
+                        <figure style="flex: 1; min-width: 300px; margin: 0;">
+                            <img src="thumbs/mostrando_moby.jpeg" alt="Showing Moby robot to media" style="width: 100%; height: auto; display: block;">
+                            <figcaption style="font-style: italic; font-size: 15px; margin-top: 5px;">Media day: showing Moby robot & explaining functionalities during press report</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="inner">
+                    <h2>My role and responsibilities</h2>
+                    <p>From the very beginning I was involved in the core engineering decisions, starting with the selection of the sensors and computing hardware that the autonomous shuttle would need.I evaluated different configurations of 3D LiDARs, solid-state LiDARs, depth and RGB cameras, radars, range sensors, and IMUs, and also contributed to choosing the onboard computers that would process all this data in real time inside the hospital.</p>
+                    <p>Once the hardware baseline was defined, I took ownership of the complete navigation stack, building it essentially from scratch on top of ROS2 and modern navigation frameworks.This included localization, mapping and SLAM, path planning, sensor fusion, obstacle avoidance, and the integration of third‑party localization and safety software that had to work together as a single coherent system in a medical environment.</p>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="inner">
+                    <h2>Social navigation and intelligent behavior</h2>
+                    <p>Hospitals are extremely crowded and sensitive environments: you have patients on stretchers, nurses rushing to emergencies, visitors standing in groups, and cleaning staff moving equipment. For this reason I later took over what we called the social navigation layer, whose purpose is to make the robot navigate not only safely but also intelligently and respectfully around people.</p>
+                    <p>To address this, we started integrating vision-language models (VLMs) and vision-language-action models (VLAs) into the navigation pipeline.The idea is to analyze the scene, understand where people are, how they are moving, what type of situation is happening (e.g., someone blocking a doorway versus a passing crowd), and then feed this high-level understanding into the navigation stack so the robot can choose more human‑like and context‑aware behaviors.</p>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="inner">
+                    <h2>System architecture, cloud and fleet management</h2>
+                    <p>Besides the onboard autonomy, I also acted as lead robotics engineer for the system architecture of the whole solution, including cloud services and fleet management.I designed diagrams of how robots, hospital IT systems, and cloud components would communicate, and then turned these designs into working systems, making sure we used robust, secure communication methods and followed hospital requirements for safety and data protection.</p>
+                    <p>This involved defining and implementing APIs and endpoints together with our customers, integrating with existing hospital software, and designing the fleet manager that monitors and coordinates multiple robots at once.Through this work I gained strong experience in system design, planning, team leadership, and the full process of taking a medical robotics product from a rough prototype to a certifiable, maintainable and demonstrable system.</p>
+                </div>
+            </div>
+
+            <div id="main">
+                <div class="inner">
+                    <h2>Demos, certification journey and communication</h2>
+                    <p>During my time on this project I was responsible for many internal and external demos, including a key demonstration in one of our client hospitals where we showed autonomous navigation with static obstacle avoidance in real hospital corridors.This demo was completed successfully and represented an important milestone, because it helped trigger the first revenue from this product line for the company, something I am extremely proud of.</p>
+                    <p>I was also deeply involved in the certification journey, preparing documentation, safety analyses, and test protocols to meet medical device standards. This included risk assessments, fail-safe mechanisms, and compliance with hospital cybersecurity requirements, advancing the shuttle towards full regulatory approval.</p>
+                    
+					<!-- VIDEO DEMO HOSPITAL - MULTI-FORMATO + RESPONSIVE -->
+					<div style="text-align: center; margin: 2em 0;">
+						<video width="800" height="450" controls preload="metadata" style="max-width: 100%; height: auto;">
+							<source src="thumbs/demo.mp4" type="video/mp4">
+							<source src="thumbs/demo.MOV" type="video/quicktime">
+							<source src="thumbs/demo.webm" type="video/webm">
+							<p>Your browser does not support video playback. <a href="thumbs/demo.mp4" target="_blank">Download here</a>.</p>
+						</video>
+						<p style="font-style: italic; font-size: 16px; margin-top: 10px; color: #666;">
+							Hospital demo: Autonomous navigation with static obstacle avoidance in real corridors
+						</p>
+					</div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
